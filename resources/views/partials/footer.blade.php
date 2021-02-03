@@ -46,4 +46,5 @@
             </ul>
         </div>
     </div>
+    <img src="{{asset('img/footer-montagne-bottom.jpg')}}" alt="Montagne">
 </footer>
