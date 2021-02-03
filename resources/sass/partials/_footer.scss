@@ -14,12 +14,17 @@ footer {
                     padding: 5px 0;
                     a {
                         color: $footerColor;
+                        transition: all 0.5s;
                     }
                     &:first-child {
                         font-size: 24px;
                         margin-bottom: 10px;
                     }
+                    &:hover a {
+                        color: darken($activeColor, 20%);
+                    }
                 }
+
             }
         }
     }

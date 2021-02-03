@@ -7,3 +7,27 @@
 @import "partials/_main";
 @import "partials/_footer";
 
+@media screen and (max-width: 992px) {
+    main {
+        section {
+            ul {
+                li {
+                    width: calc((100% / 2) - 10px);
+                }
+            }
+        }
+    }
+
+    footer {
+        .container {
+            flex-direction: column;
+            .brandInfo {
+                margin-bottom: 30px;
+            }
+            .links {
+                flex-direction: column;
+            }
+        }
+    }
+
+}

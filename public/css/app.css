@@ -7,6 +7,7 @@
 
 body {
   font-family: "Open sans", sans-serif;
+  width: 100%;
 }
 
 ul {
@@ -32,7 +33,7 @@ header {
   text-align: center;
 }
 header img {
-  margin: 50px 0;
+  margin: 50px auto;
 }
 header nav li {
   display: inline-block;
@@ -113,8 +114,28 @@ footer .container .links ul li {
 }
 footer .container .links ul li a {
   color: #808080;
+  transition: all 0.5s;
 }
 footer .container .links ul li:first-child {
   font-size: 24px;
   margin-bottom: 10px;
+}
+footer .container .links ul li:hover a {
+  color: #51c3f8;
+}
+
+@media screen and (max-width: 992px) {
+  main section ul li {
+    width: calc((100% / 2) - 10px);
+  }
+
+  footer .container {
+    flex-direction: column;
+  }
+  footer .container .brandInfo {
+    margin-bottom: 30px;
+  }
+  footer .container .links {
+    flex-direction: column;
+  }
 }
