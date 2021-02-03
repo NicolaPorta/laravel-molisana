@@ -1,0 +1,11 @@
+@media screen and (max-width: 600px) {
+    main {
+        section {
+            ul {
+                li {
+                    width: calc(100% - 10px);
+                }
+            }
+        }
+    }
+}

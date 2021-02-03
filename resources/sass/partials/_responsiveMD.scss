@@ -1,0 +1,35 @@
+@media screen and (max-width: 992px) {
+    header {
+        nav {
+            .fas.fa-bars {
+                display: inline-block;
+            }
+            ul {
+            display: none;
+            }
+        }
+    }
+
+    main {
+        section {
+            ul {
+                li {
+                    width: calc((100% / 2) - 10px);
+                }
+            }
+        }
+    }
+
+    footer {
+        .container {
+            flex-direction: column;
+            .brandInfo {
+                margin-bottom: 30px;
+            }
+            .links {
+                flex-direction: column;
+            }
+        }
+    }
+
+}

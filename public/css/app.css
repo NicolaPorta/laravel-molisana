@@ -35,6 +35,12 @@ header {
 header img {
   margin: 50px auto;
 }
+header nav .fas.fa-bars {
+  font-size: 30px;
+  display: none;
+  margin-bottom: 25px;
+  padding-top: 20px;
+}
 header nav li {
   display: inline-block;
   padding: 20px 10px;
@@ -125,6 +131,13 @@ footer .container .links ul li:hover a {
 }
 
 @media screen and (max-width: 992px) {
+  header nav .fas.fa-bars {
+    display: inline-block;
+  }
+  header nav ul {
+    display: none;
+  }
+
   main section ul li {
     width: calc((100% / 2) - 10px);
   }
@@ -137,5 +150,10 @@ footer .container .links ul li:hover a {
   }
   footer .container .links {
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 600px) {
+  main section ul li {
+    width: calc(100% - 10px);
   }
 }

@@ -5,6 +5,12 @@ header {
         margin: 50px auto;
     }
     nav {
+        .fas.fa-bars {
+            font-size: 30px;
+            display: none;
+            margin-bottom: 25px;
+            padding-top: 20px;
+        }
         li {
             display: inline-block;
             padding: 20px 10px;
