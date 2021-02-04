@@ -57,15 +57,55 @@ header nav li:hover {
 }
 
 main {
+  padding: 50px 0;
+}
+main.home {
   background-image: url("/../img/fondo-pag-speciali.jpg");
   background-size: cover;
-  padding: 50px 0;
+}
+main.product {
+  position: relative;
+  color: #003a91;
+  background-color: #B8DAE4;
+}
+main.product h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+}
+main.product a {
+  position: absolute;
+  top: 0;
+  width: 5%;
+  height: 100%;
+  transition: all 0.5s;
+  opacity: 0;
+}
+main.product a:hover {
+  opacity: 1;
+}
+main.product .prev {
+  left: 0;
+  background-image: linear-gradient(to right, #a6d0dd, transparent);
+}
+main.product .prev:active {
+  background-image: linear-gradient(to right, #93c7d6, transparent);
+  width: 50%;
+}
+main.product .next {
+  right: 0;
+  background-image: linear-gradient(to right, transparent, #a6d0dd);
+}
+main.product .next:active {
+  background-image: linear-gradient(to right, transparent, #93c7d6);
+  width: 50%;
 }
 main section {
   padding-bottom: 30px;
 }
 main section h2 {
-  color: #002D75;
+  color: #003a91;
   font-weight: 400;
   padding-left: 5px;
 }

@@ -3,14 +3,14 @@
     <nav>
         <i class="fas fa-bars"></i>
         <ul>
-            <li class="active">
-                <a href="#">Home</a>
+            <li class="{{Route::currentRouteName() == 'home' ? 'active' : ''}}">
+                <a href="{{route('home')}}">Home</a>
             </li>
-            <li>
-                <a href="#">Prodotti</a>
+            <li class="{{Route::currentRouteName() == 'product' ? 'active' : ''}}">
+                <a href="{{route('product', [ 'id' => 0 ])}}">Prodotti</a>
             </li>
-            <li>
-                <a href="#">News</a>
+            <li class="{{Route::currentRouteName() == 'news' ? 'active' : ''}}">
+                <a href="{{route('news')}}">News</a>
             </li>
         </ul>
     </nav>
